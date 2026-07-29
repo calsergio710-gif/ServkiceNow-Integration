@@ -1,0 +1,39 @@
+﻿{
+    "fields": {
+      "project": {
+        "key": "ECW"
+      },
+      "summary": "Issue created via REST API",
+      "issuetype": {
+        "name": "Task"
+      },
+      "description": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This is "
+              },
+              {
+                "type": "text",
+                "text": "bold",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " text."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }'
