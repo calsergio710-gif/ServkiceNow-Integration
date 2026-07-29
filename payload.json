@@ -1,0 +1,13 @@
+﻿{
+  "type": "comment",
+  "container": {
+    "type": "page",
+    "id": "53739521"
+  },
+  "body": {
+    "storage": {
+      "value": "<p>hello from curl</p>",
+      "representation": "storage"
+    }
+  }
+}
