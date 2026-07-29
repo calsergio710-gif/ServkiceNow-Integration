@@ -7,7 +7,7 @@
   "body": {
     "storage": {
       "value": "<p>hello from curl</p>",
-      "representation": "storage"
+     
     }
   }
 }
