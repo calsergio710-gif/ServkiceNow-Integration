@@ -5,7 +5,7 @@
       },
       "summary": "Issue created via REST API",
       "issuetype": {
-        "name": "Tasks"
+        "name": "Task"
       },
       "description": {
         "type": "doc",
