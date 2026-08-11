@@ -13,7 +13,6 @@ jobs:
     steps:
       - name: Build
         run: echo "Build completed"
-
   ServiceNowDevOpsChange:
     needs: build
     runs-on: ubuntu-latest
