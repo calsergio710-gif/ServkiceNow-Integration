@@ -1,0 +1,21 @@
+ServiceNowDevOpsChange:
+        # jobs that must complete successfully before this job will run
+        needs: build
+        # type of machine to run the job on
+        runs-on: ubuntu-latest
+        name: 'ServiceNow DevOps Change' 
+        steps:
+          - name: ServiceNow Change
+            # Ensure to update to the latest version of the custom action, for e.g. ServiceNow/servicenow-devops-change@v5.1.0
+            uses: ServiceNow/servicenow-devops-change@VERSION
+            with:
+              # Devops Integration Token
+              devops-integration-token: rBCJr4BU2DCzBjojXBhevvEyjJqXGARE
+              # ServiceNow Instance URL
+              instance-url: https://dev296263.service-now.com/
+              # Orchestration Tool Id
+              tool-id: 6106c20b932203503f5a30dcebba1019
+              # GitHub Context
+              context-github: ${{ toJSON(github) }}
+              # Display Name of the Job
+              job-name: 'ServiceNow DevOps Change'
