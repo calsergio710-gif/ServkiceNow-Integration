@@ -1,13 +1,27 @@
-ServiceNowDevOpsChange:
-        # jobs that must complete successfully before this job will run
-        needs: build
-        # type of machine to run the job on
-        runs-on: ubuntu-latest
-        name: 'ServiceNow DevOps Change' 
+name: ServiceNow DevOps Change
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build
+        run: echo "Build completed"
+
+  ServiceNowDevOpsChange:
+    needs: build
+    runs-on: ubuntu-latest
+    name: 'ServiceNow DevOps Change'
         steps:
           - name: ServiceNow Change
             # Ensure to update to the latest version of the custom action, for e.g. ServiceNow/servicenow-devops-change@v5.1.0
-            uses: ServiceNow/servicenow-devops-change@VERSION
+            uses: ServiceNow/servicenow-devops-change@v1.0
             with:
               # Devops Integration Token
               devops-integration-token: rBCJr4BU2DCzBjojXBhevvEyjJqXGARE
