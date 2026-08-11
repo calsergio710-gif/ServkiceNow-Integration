@@ -22,8 +22,8 @@ jobs:
       - name: ServiceNow Change
         uses: ServiceNow/servicenow-devops-change@v5.1.0
         with:
-          devops-integration-token: rBCJr4BU2DCzBjojXBhevvEyjJqXGARE
+          devops-integration-token: TgaG2rBxlsH09FiEmkah0nM1xJyPuMZS
           instance-url: https://dev296263.service-now.com
-          tool-id: 6106c20b932203503f5a30dcebba1019
+          tool-id: 902c82cb936203503f5a30dcebba104f
           context-github: ${{ toJSON(github) }}
           job-name: 'ServiceNow DevOps Change'
